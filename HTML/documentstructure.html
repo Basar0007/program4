@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Document Structure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my website. Here you will find various articles and information.</p>
+        </section>
+
+        <section id="articles">
+            <h2>Articles</h2>
+            <article>
+                <h3>Article 1</h3>
+                <p>This is the content of the first article.</p>
+            </article>
+            <article>
+                <h3>Article 2</h3>
+                <p>This is the content of the second article.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="#link1">Link 1</a></li>
+                <li><a href="#link2">Link 2</a></li>
+                <li><a href="#link3">Link 3</a></li>
+            </ul>
+        </aside>
+
+        <figure>
+            <img src="example.jpg" alt="An example image">
+            <figcaption>This is an example image with a caption.</figcaption>
+        </figure>
+
+        <dialog id="myDialog">
+            <form method="dialog">
+                <p>Do you want to proceed?</p>
+                <button>Yes</button>
+                <button>Cancel</button>
+            </form>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example of how to show the dialog
+        const dialog = document.getElementById('myDialog');
+        dialog.showModal();
+    </script>
+</body>
+</html>

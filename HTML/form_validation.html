@@ -1,0 +1,44 @@
+<html>
+    <body>
+        <form>
+            <div>
+                <label for="name"> Name: </label>
+                <input type="text" id="name" name="name" value="" >
+                <span id="nameerror" class="error"></span>
+            </div>
+            <div>
+                <label for="email"> Email: </label>
+                <input type="text" id="email" name="email" value="" >
+                <span id="emailerror" class="error"></span>
+            </div>
+            <div>
+                <label for="phone"> phone: </label>
+                <input type="text" id="phone" name="phone;; value="" >
+                <span id="phoneerror" class="error"></span>
+            </div>
+            <div>
+                <label for="Password"> Password: </label>
+                <input type="password" id="password" name="password" value="" >
+                <span id="passworderror" class="error"></span>
+            </div>
+            <div>
+                <label for="conformpassword"> conformpassword: </label>
+                <input type="conformpassword" id="conformpassword" name="conformpassword" value="" >
+                <span id="conformpassworderror" class="error"></span>
+            </div>
+            <input type="submit"  value="submit" >
+
+        </form>
+    </body>
+    <script>
+        function validateForm(){
+            var isvalid = true;
+
+            dument.getElementById('nameerror').textContent ='';
+            dument.getElementById('emailerror').textContent ='';
+            dument.getElementById('phoneerror').textContent ='';
+            dument.getElementById('passworderror').textContent ='';
+            dument.getElementById('conformpassworderror').textContent ='';
+        }
+    </script>
+</html>oc
